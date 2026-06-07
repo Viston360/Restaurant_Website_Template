@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | La Tavola</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                La Tavola
+            </div>
+
+            <div class="nav-buttons">
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('index.html')">
+                    Home
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('menu.html')">
+                    Menu
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('gallery.html')">
+                    Gallery
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('contact.html')">
+                    Contact
+                </button>
+
+                <button
+                    class="nav-btn reserve-btn"
+                    onclick="goTo('reservations.html')">
+                    Reserve Table
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Our Gallery
+            </h2>
+
+            <p>
+                A glimpse into our cuisine, atmosphere
+                and unforgettable dining experience.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200"
+            alt="Steak">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=1200"
+            alt="Pasta">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200"
+            alt="Restaurant">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200"
+            alt="Interior">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=1200"
+            alt="Dessert">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200"
+            alt="Dining">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1200"
+            alt="Food">
+
+            <img
+            class="gallery-image"
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1200"
+            alt="Restaurant Interior">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+
+<div
+id="lightbox"
+class="lightbox">
+
+    <img
+    id="lightbox-image"
+    src=""
+    alt="Preview">
+
+</div>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © <span id="year"></span>
+            La Tavola Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
