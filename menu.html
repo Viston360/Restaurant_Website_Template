@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | La Tavola</title>
 
-<title>Menu | La Tavola</title>
-
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<!-- HEADER -->
 
 <header>
 
     <div class="container">
 
-        <nav class="navbar">
+        <div class="navbar">
 
             <div class="logo">
                 La Tavola
@@ -25,140 +21,153 @@
 
             <div class="nav-buttons">
 
-                <button onclick="goTo('index.html')">
+                <button
+                    class="nav-btn"
+                    onclick="goTo('index.html')">
                     Home
                 </button>
 
-                <button onclick="goTo('menu.html')">
+                <button
+                    class="nav-btn"
+                    onclick="goTo('menu.html')">
                     Menu
                 </button>
 
-                <button onclick="goTo('gallery.html')">
+                <button
+                    class="nav-btn"
+                    onclick="goTo('gallery.html')">
                     Gallery
                 </button>
 
-                <button onclick="goTo('contact.html')">
+                <button
+                    class="nav-btn"
+                    onclick="goTo('contact.html')">
                     Contact
                 </button>
 
-                <button class="reserve-btn"
-                onclick="goTo('reservations.html')">
-
-                    Reserve
-
+                <button
+                    class="nav-btn reserve-btn"
+                    onclick="goTo('reservations.html')">
+                    Reserve Table
                 </button>
 
             </div>
 
-        </nav>
+        </div>
 
     </div>
 
 </header>
 
-<!-- HERO -->
-
-<section class="menu-hero">
-
-    <div class="container">
-
-        <h1>
-            Our Menu
-        </h1>
-
-        <p>
-            Fresh ingredients. Authentic flavors.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- WEEKLY SPECIALS -->
-
-<section class="weekly-specials">
+<section>
 
     <div class="container">
 
         <div class="section-title">
 
             <h2>
-                Weekly Specials
+                Our Menu
             </h2>
 
             <p>
-                Updated automatically by the restaurant.
+                Fresh ingredients. Exceptional taste.
             </p>
 
         </div>
 
+    </div>
+
+</section>
+<!-- Weekly Menu -->
+<section>
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Weekly Specials</h2>
+            <p>Updated automatically by the restaurant.</p>
+        </div>
+
         <div id="weekly-menu">
-
             Loading specials...
-
         </div>
 
     </div>
-
 </section>
 
-<!-- SEARCH -->
-
-<section class="menu-search">
-
-    <div class="container">
-
-        <input
-        type="text"
-        id="menuSearch"
-        placeholder="Search dishes...">
-
-    </div>
-
-</section>
-
-<!-- FILTERS -->
+<!-- STARTERS -->
 
 <section>
 
     <div class="container">
 
-        <div class="filters">
+        <div class="menu-category">
 
-            <button class="filter-btn active"
-            data-filter="all">
-
-                All
-
-            </button>
-
-            <button class="filter-btn"
-            data-filter="starters">
-
+            <h2>
                 Starters
+            </h2>
 
-            </button>
+            <div class="menu-item">
 
-            <button class="filter-btn"
-            data-filter="mains">
+                <div>
 
-                Mains
+                    <h3>
+                        Bruschetta
+                    </h3>
 
-            </button>
+                    <p>
+                        Toasted bread, tomatoes,
+                        basil and olive oil.
+                    </p>
 
-            <button class="filter-btn"
-            data-filter="desserts">
+                </div>
 
-                Desserts
+                <div class="menu-item-price">
+                    €8
+                </div>
 
-            </button>
+            </div>
 
-            <button class="filter-btn"
-            data-filter="drinks">
+            <div class="menu-item">
 
-                Drinks
+                <div>
 
-            </button>
+                    <h3>
+                        Soup of the Day
+                    </h3>
+
+                    <p>
+                        Prepared fresh daily by
+                        our chef.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €7
+                </div>
+
+            </div>
+
+            <div class="menu-item">
+
+                <div>
+
+                    <h3>
+                        Shrimp Cocktail
+                    </h3>
+
+                    <p>
+                        Fresh shrimp with cocktail
+                        sauce and lemon.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €12
+                </div>
+
+            </div>
 
         </div>
 
@@ -166,190 +175,98 @@
 
 </section>
 
-<!-- MENU ITEMS -->
+<!-- MAIN COURSES -->
 
 <section>
 
     <div class="container">
 
-        <div class="menu-grid">
+        <div class="menu-category">
 
-            <!-- ITEM -->
+            <h2>
+                Main Courses
+            </h2>
 
-            <div
-            class="menu-card"
-            data-category="mains">
+            <div class="menu-item">
 
-                <div class="menu-header">
+                <div>
 
-                    <div>
+                    <h3>
+                        Premium Ribeye Steak
+                    </h3>
 
-                        <span class="featured-badge">
-                            Chef's Pick
-                        </span>
-
-                        <h3>
-                            Premium Ribeye Steak
-                        </h3>
-
-                        <div class="badges">
-
-                            <span class="badge">
-                                GF
-                            </span>
-
-                            <span class="badge">
-                                Popular
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <span class="price">
-
-                        €34
-
-                    </span>
+                    <p>
+                        Dry-aged beef with vegetables
+                        and signature sauce.
+                    </p>
 
                 </div>
 
-                <button class="expand-btn">
-
-                    View Details
-
-                </button>
-
-                <div class="menu-details">
-
-                    <img
-                    src="images/ribeye.jpg"
-                    alt="Ribeye Steak">
-
-                    <p>
-                        Dry-aged beef steak grilled
-                        to perfection and served
-                        with roasted vegetables.
-                    </p>
-
-                    <h4>
-                        Ingredients
-                    </h4>
-
-                    <ul>
-
-                        <li>
-                            Premium Beef
-                        </li>
-
-                        <li>
-                            Garlic Butter
-                        </li>
-
-                        <li>
-                            Rosemary
-                        </li>
-
-                    </ul>
-
+                <div class="menu-item-price">
+                    €34
                 </div>
 
             </div>
 
-            <!-- ITEM -->
+            <div class="menu-item">
 
-            <div
-            class="menu-card"
-            data-category="mains">
+                <div>
 
-                <div class="menu-header">
+                    <h3>
+                        Truffle Pasta
+                    </h3>
 
-                    <div>
-
-                        <h3>
-                            Truffle Pasta
-                        </h3>
-
-                        <div class="badges">
-
-                            <span class="badge">
-                                Vegetarian
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                    <span class="price">
-
-                        €24
-
-                    </span>
+                    <p>
+                        Handmade pasta with creamy
+                        truffle sauce.
+                    </p>
 
                 </div>
 
-                <button class="expand-btn">
-
-                    View Details
-
-                </button>
-
-                <div class="menu-details">
-
-                    <img
-                    src="images/pasta.jpg"
-                    alt="Truffle Pasta">
-
-                    <p>
-                        Handmade pasta with rich
-                        truffle cream sauce.
-                    </p>
-
+                <div class="menu-item-price">
+                    €24
                 </div>
 
             </div>
 
-            <!-- ITEM -->
+            <div class="menu-item">
 
-            <div
-            class="menu-card"
-            data-category="desserts">
+                <div>
 
-                <div class="menu-header">
+                    <h3>
+                        Grilled Salmon
+                    </h3>
 
-                    <div>
-
-                        <h3>
-                            Chocolate Lava Cake
-                        </h3>
-
-                    </div>
-
-                    <span class="price">
-
-                        €12
-
-                    </span>
+                    <p>
+                        Fresh Atlantic salmon
+                        served with vegetables.
+                    </p>
 
                 </div>
 
-                <button class="expand-btn">
+                <div class="menu-item-price">
+                    €28
+                </div>
 
-                    View Details
+            </div>
 
-                </button>
+            <div class="menu-item">
 
-                <div class="menu-details">
+                <div>
 
-                    <img
-                    src="images/lava-cake.jpg"
-                    alt="Chocolate Lava Cake">
+                    <h3>
+                        Gourmet Burger
+                    </h3>
 
                     <p>
-                        Warm chocolate center
-                        served with vanilla ice cream.
+                        Angus beef, cheddar,
+                        lettuce and fries.
                     </p>
 
+                </div>
+
+                <div class="menu-item-price">
+                    €19
                 </div>
 
             </div>
@@ -360,48 +277,179 @@
 
 </section>
 
-<!-- RESERVE CTA -->
+<!-- DESSERTS -->
 
-<section class="reserve-cta">
+<section>
 
     <div class="container">
 
-        <h2>
-            Ready To Dine?
-        </h2>
+        <div class="menu-category">
 
-        <p>
-            Reserve your table online.
-        </p>
+            <h2>
+                Desserts
+            </h2>
 
-        <button
-        class="reserve-btn"
-        onclick="goTo('reservations.html')">
+            <div class="menu-item">
 
-            Reserve Now
+                <div>
 
-        </button>
+                    <h3>
+                        Chocolate Lava Cake
+                    </h3>
+
+                    <p>
+                        Warm chocolate center with
+                        vanilla ice cream.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €12
+                </div>
+
+            </div>
+
+            <div class="menu-item">
+
+                <div>
+
+                    <h3>
+                        Cheesecake
+                    </h3>
+
+                    <p>
+                        Creamy cheesecake with
+                        berry sauce.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €10
+                </div>
+
+            </div>
+
+            <div class="menu-item">
+
+                <div>
+
+                    <h3>
+                        Tiramisu
+                    </h3>
+
+                    <p>
+                        Traditional Italian dessert.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €9
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
-<!-- FOOTER -->
+<!-- DRINKS -->
+
+<section>
+
+    <div class="container">
+
+        <div class="menu-category">
+
+            <h2>
+                Drinks
+            </h2>
+
+            <div class="menu-item">
+
+                <div>
+
+                    <h3>
+                        Espresso
+                    </h3>
+
+                    <p>
+                        Freshly brewed Italian coffee.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €3
+                </div>
+
+            </div>
+
+            <div class="menu-item">
+
+                <div>
+
+                    <h3>
+                        Cappuccino
+                    </h3>
+
+                    <p>
+                        Espresso with steamed milk.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €4
+                </div>
+
+            </div>
+
+            <div class="menu-item">
+
+                <div>
+
+                    <h3>
+                        Fresh Orange Juice
+                    </h3>
+
+                    <p>
+                        Freshly squeezed daily.
+                    </p>
+
+                </div>
+
+                <div class="menu-item-price">
+                    €5
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <footer>
 
     <div class="container">
 
         <p>
-
-            © 2026 La Tavola Restaurant
-
+            © <span id="year"></span>
+            La Tavola Restaurant.
+            All Rights Reserved.
         </p>
 
     </div>
 
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
