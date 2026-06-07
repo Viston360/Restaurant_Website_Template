@@ -1,1 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tavola | Fine Dining Restaurant</title>
 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                La Tavola
+            </div>
+
+            <div class="nav-buttons">
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('index.html')">
+                    Home
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('menu.html')">
+                    Menu
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('gallery.html')">
+                    Gallery
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('contact.html')">
+                    Contact
+                </button>
+
+                <button
+                    class="nav-btn reserve-btn"
+                    onclick="goTo('reservations.html')">
+                    Reserve Table
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <h1>
+                Fine Dining Reimagined
+            </h1>
+
+            <p>
+                Experience handcrafted cuisine,
+                exceptional service and a warm
+                atmosphere designed for unforgettable
+                evenings.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button
+                    class="primary-btn"
+                    onclick="goTo('reservations.html')">
+                    Reserve Now
+                </button>
+
+                <button
+                    class="secondary-btn"
+                    onclick="goTo('menu.html')">
+                    View Menu
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FEATURED DISHES -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Featured Dishes
+            </h2>
+
+            <p>
+                Some of our guests' favorites.
+            </p>
+
+        </div>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?w=1200"
+                alt="Steak">
+
+                <div class="feature-content">
+
+                    <h3>
+                        Premium Ribeye Steak
+                    </h3>
+
+                    <p>
+                        Dry-aged beef served with
+                        roasted vegetables and
+                        chef's signature sauce.
+                    </p>
+
+                    <br>
+
+                    <div class="price">
+                        €34
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=1200"
+                alt="Pasta">
+
+                <div class="feature-content">
+
+                    <h3>
+                        Truffle Pasta
+                    </h3>
+
+                    <p>
+                        Handmade pasta with
+                        black truffle cream sauce.
+                    </p>
+
+                    <br>
+
+                    <div class="price">
+                        €24
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="feature-card">
+
+                <img
+                src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=1200"
+                alt="Dessert">
+
+                <div class="feature-content">
+
+                    <h3>
+                        Chocolate Lava Cake
+                    </h3>
+
+                    <p>
+                        Warm chocolate center
+                        served with vanilla ice cream.
+                    </p>
+
+                    <br>
+
+                    <div class="price">
+                        €12
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                About Us
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <p>
+
+                At La Tavola, we believe dining
+                should be an experience.
+                Every dish is carefully prepared
+                using fresh ingredients sourced
+                from trusted local suppliers.
+
+                Our chefs combine tradition with
+                innovation to create meals that
+                delight both the eye and the palate.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Guest Reviews
+            </h2>
+
+        </div>
+
+        <div class="testimonial active">
+
+            <p>
+                "One of the best dining experiences
+                I've ever had. The food was incredible."
+            </p>
+
+            <br>
+
+            <strong>
+                — Sarah M.
+            </strong>
+
+        </div>
+
+        <div class="testimonial">
+
+            <p>
+                "Beautiful atmosphere and
+                excellent service."
+            </p>
+
+            <br>
+
+            <strong>
+                — Michael T.
+            </strong>
+
+        </div>
+
+        <div class="testimonial">
+
+            <p>
+                "Absolutely worth visiting.
+                Everything was perfect."
+            </p>
+
+            <br>
+
+            <strong>
+                — Emma R.
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- HOURS -->
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Opening Hours
+            </h2>
+
+        </div>
+
+        <div class="card">
+
+            <p>Monday - Thursday: 11:00 - 22:00</p>
+            <p>Friday: 11:00 - 23:00</p>
+            <p>Saturday: 10:00 - 23:00</p>
+            <p>Sunday: 10:00 - 21:00</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © <span id="year"></span>
+            La Tavola Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
