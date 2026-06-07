@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu | La Tavola</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="styles.css">
+<title>Menu | La Tavola</title>
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+<!-- HEADER -->
 
 <header>
 
     <div class="container">
 
-        <div class="navbar">
+        <nav class="navbar">
 
             <div class="logo">
                 La Tavola
@@ -21,280 +25,331 @@
 
             <div class="nav-buttons">
 
-                <button
-                    class="nav-btn"
-                    onclick="goTo('index.html')">
+                <button onclick="goTo('index.html')">
                     Home
                 </button>
 
-                <button
-                    class="nav-btn"
-                    onclick="goTo('menu.html')">
+                <button onclick="goTo('menu.html')">
                     Menu
                 </button>
 
-                <button
-                    class="nav-btn"
-                    onclick="goTo('gallery.html')">
+                <button onclick="goTo('gallery.html')">
                     Gallery
                 </button>
 
-                <button
-                    class="nav-btn"
-                    onclick="goTo('contact.html')">
+                <button onclick="goTo('contact.html')">
                     Contact
                 </button>
 
-                <button
-                    class="nav-btn reserve-btn"
-                    onclick="goTo('reservations.html')">
-                    Reserve Table
+                <button class="reserve-btn"
+                onclick="goTo('reservations.html')">
+
+                    Reserve
+
                 </button>
 
             </div>
 
-        </div>
+        </nav>
 
     </div>
 
 </header>
 
-<section>
+<!-- HERO -->
+
+<section class="menu-hero">
+
+    <div class="container">
+
+        <h1>
+            Our Menu
+        </h1>
+
+        <p>
+            Fresh ingredients. Authentic flavors.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- WEEKLY SPECIALS -->
+
+<section class="weekly-specials">
 
     <div class="container">
 
         <div class="section-title">
 
             <h2>
-                Our Menu
+                Weekly Specials
             </h2>
 
             <p>
-                Fresh ingredients. Exceptional taste.
+                Updated automatically by the restaurant.
             </p>
 
         </div>
 
-    </div>
-
-</section>
-<!-- Weekly Menu -->
-<section>
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Weekly Specials</h2>
-            <p>Updated automatically by the restaurant.</p>
-        </div>
-
         <div id="weekly-menu">
+
             Loading specials...
+
         </div>
 
     </div>
+
 </section>
 
-<!-- STARTERS -->
+<!-- SEARCH -->
+
+<section class="menu-search">
+
+    <div class="container">
+
+        <input
+        type="text"
+        id="menuSearch"
+        placeholder="Search dishes...">
+
+    </div>
+
+</section>
+
+<!-- FILTERS -->
 
 <section>
 
     <div class="container">
 
-        <div class="menu-category">
+        <div class="filters">
 
-            <h2>
+            <button class="filter-btn active"
+            data-filter="all">
+
+                All
+
+            </button>
+
+            <button class="filter-btn"
+            data-filter="starters">
+
                 Starters
-            </h2>
 
-            <div class="menu-item">
+            </button>
 
-    <div class="menu-header">
+            <button class="filter-btn"
+            data-filter="mains">
 
-        <h3>Premium Ribeye Steak</h3>
+                Mains
 
-        <div>
-            <span class="menu-item-price">€34</span>
-            <span class="arrow">▼</span>
-        </div>
+            </button>
 
-    </div>
+            <button class="filter-btn"
+            data-filter="desserts">
 
-    <div class="menu-details">
-
-        <p>
-            Dry-aged beef steak grilled to
-            perfection and served with seasonal
-            vegetables.
-        </p>
-
-        <ul>
-            <li>Premium Beef</li>
-            <li>Rosemary</li>
-            <li>Garlic Butter</li>
-        </ul>
-
-    </div>
-
-</div>
-</section>
-
-<!-- MAIN COURSES -->
-
-<section>
-
-    <div class="container">
-
-        <div class="menu-category">
-
-            <h2>
-                Main Courses
-            </h2>
-
-           <div class="menu-item">
-
-    <div class="menu-header">
-
-        <h3>Premium Ribeye Steak</h3>
-
-        <div>
-            <span class="menu-item-price">€34</span>
-            <span class="arrow">▼</span>
-        </div>
-
-    </div>
-
-    <div class="menu-details">
-
-        <p>
-            Dry-aged beef steak grilled to
-            perfection and served with seasonal
-            vegetables.
-        </p>
-
-        <ul>
-            <li>Premium Beef</li>
-            <li>Rosemary</li>
-            <li>Garlic Butter</li>
-        </ul>
-
-    </div>
-
-</div>
-
-</section>
-
-<!-- DESSERTS -->
-
-<section>
-
-    <div class="container">
-
-        <div class="menu-category">
-
-            <h2>
                 Desserts
-            </h2>
 
-            <div class="menu-item">
+            </button>
 
-    <div class="menu-header">
+            <button class="filter-btn"
+            data-filter="drinks">
 
-        <h3>Premium Ribeye Steak</h3>
+                Drinks
 
-        <div>
-            <span class="menu-item-price">€34</span>
-            <span class="arrow">▼</span>
+            </button>
+
         </div>
 
     </div>
 
-    <div class="menu-details">
-
-        <p>
-            Dry-aged beef steak grilled to
-            perfection and served with seasonal
-            vegetables.
-        </p>
-
-        <ul>
-            <li>Premium Beef</li>
-            <li>Rosemary</li>
-            <li>Garlic Butter</li>
-        </ul>
-
-    </div>
-
-</div>
 </section>
 
-<!-- DRINKS -->
+<!-- MENU ITEMS -->
 
 <section>
 
     <div class="container">
 
-        <div class="menu-category">
+        <div class="menu-grid">
 
-            <h2>
-                Drinks
-            </h2>
+            <!-- ITEM -->
 
-            <div class="menu-item">
+            <div
+            class="menu-card"
+            data-category="mains">
 
-                <div>
+                <div class="menu-header">
 
-                    <h3>
-                        Espresso
-                    </h3>
+                    <div>
 
-                    <p>
-                        Freshly brewed Italian coffee.
-                    </p>
+                        <span class="featured-badge">
+                            Chef's Pick
+                        </span>
+
+                        <h3>
+                            Premium Ribeye Steak
+                        </h3>
+
+                        <div class="badges">
+
+                            <span class="badge">
+                                GF
+                            </span>
+
+                            <span class="badge">
+                                Popular
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <span class="price">
+
+                        €34
+
+                    </span>
 
                 </div>
 
-                <div class="menu-item-price">
-                    €3
+                <button class="expand-btn">
+
+                    View Details
+
+                </button>
+
+                <div class="menu-details">
+
+                    <img
+                    src="images/ribeye.jpg"
+                    alt="Ribeye Steak">
+
+                    <p>
+                        Dry-aged beef steak grilled
+                        to perfection and served
+                        with roasted vegetables.
+                    </p>
+
+                    <h4>
+                        Ingredients
+                    </h4>
+
+                    <ul>
+
+                        <li>
+                            Premium Beef
+                        </li>
+
+                        <li>
+                            Garlic Butter
+                        </li>
+
+                        <li>
+                            Rosemary
+                        </li>
+
+                    </ul>
+
                 </div>
 
             </div>
 
-            <div class="menu-item">
+            <!-- ITEM -->
 
-                <div>
+            <div
+            class="menu-card"
+            data-category="mains">
 
-                    <h3>
-                        Cappuccino
-                    </h3>
+                <div class="menu-header">
 
-                    <p>
-                        Espresso with steamed milk.
-                    </p>
+                    <div>
+
+                        <h3>
+                            Truffle Pasta
+                        </h3>
+
+                        <div class="badges">
+
+                            <span class="badge">
+                                Vegetarian
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <span class="price">
+
+                        €24
+
+                    </span>
 
                 </div>
 
-                <div class="menu-item-price">
-                    €4
+                <button class="expand-btn">
+
+                    View Details
+
+                </button>
+
+                <div class="menu-details">
+
+                    <img
+                    src="images/pasta.jpg"
+                    alt="Truffle Pasta">
+
+                    <p>
+                        Handmade pasta with rich
+                        truffle cream sauce.
+                    </p>
+
                 </div>
 
             </div>
 
-            <div class="menu-item">
+            <!-- ITEM -->
 
-                <div>
+            <div
+            class="menu-card"
+            data-category="desserts">
 
-                    <h3>
-                        Fresh Orange Juice
-                    </h3>
+                <div class="menu-header">
 
-                    <p>
-                        Freshly squeezed daily.
-                    </p>
+                    <div>
+
+                        <h3>
+                            Chocolate Lava Cake
+                        </h3>
+
+                    </div>
+
+                    <span class="price">
+
+                        €12
+
+                    </span>
 
                 </div>
 
-                <div class="menu-item-price">
-                    €5
+                <button class="expand-btn">
+
+                    View Details
+
+                </button>
+
+                <div class="menu-details">
+
+                    <img
+                    src="images/lava-cake.jpg"
+                    alt="Chocolate Lava Cake">
+
+                    <p>
+                        Warm chocolate center
+                        served with vanilla ice cream.
+                    </p>
+
                 </div>
 
             </div>
@@ -304,22 +359,49 @@
     </div>
 
 </section>
+
+<!-- RESERVE CTA -->
+
+<section class="reserve-cta">
+
+    <div class="container">
+
+        <h2>
+            Ready To Dine?
+        </h2>
+
+        <p>
+            Reserve your table online.
+        </p>
+
+        <button
+        class="reserve-btn"
+        onclick="goTo('reservations.html')">
+
+            Reserve Now
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
 
 <footer>
 
     <div class="container">
 
         <p>
-            © <span id="year"></span>
-            La Tavola Restaurant.
-            All Rights Reserved.
+
+            © 2026 La Tavola Restaurant
+
         </p>
 
     </div>
 
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script src="script.js"></script>
 
 </body>
