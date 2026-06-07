@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | La Tavola</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <div class="logo">
+                La Tavola
+            </div>
+
+            <div class="nav-buttons">
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('index.html')">
+                    Home
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('menu.html')">
+                    Menu
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('gallery.html')">
+                    Gallery
+                </button>
+
+                <button
+                    class="nav-btn"
+                    onclick="goTo('contact.html')">
+                    Contact
+                </button>
+
+                <button
+                    class="nav-btn reserve-btn"
+                    onclick="goTo('reservations.html')">
+                    Reserve Table
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Reserve Your Table
+            </h2>
+
+            <p>
+                Book your dining experience in a few seconds.
+            </p>
+
+        </div>
+
+        <div class="form-container">
+
+            <form id="reservationForm">
+
+                <div class="form-group">
+
+                    <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                    type="date"
+                    id="date"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <input
+                    type="time"
+                    id="time"
+                    required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <select
+                    id="guests"
+                    required>
+
+                        <option value="">
+                            Number of Guests
+                        </option>
+
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8+</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <textarea
+                    id="notes"
+                    placeholder="Special Requests"></textarea>
+
+                </div>
+
+                <button
+                type="submit"
+                class="submit-btn">
+
+                    Reserve Table
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h3>
+                Reservation Information
+            </h3>
+
+            <br>
+
+            <p>
+                Reservations are confirmed by email.
+            </p>
+
+            <p>
+                Large groups may require advance notice.
+            </p>
+
+            <p>
+                Please arrive 10 minutes before your reservation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © <span id="year"></span>
+            La Tavola Restaurant.
+            All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<!-- EMAILJS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
